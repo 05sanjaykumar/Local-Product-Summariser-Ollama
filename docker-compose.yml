@@ -1,0 +1,40 @@
+services:
+  backend:
+    platform: linux/amd64 
+    build: ./backend
+    container_name: backend
+    ports:
+      - "3000:3000"
+
+  ai-summariser:
+    build: ./ai-summariser
+    container_name: ai-summariser
+    ports:
+      - "5050:5050"
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+
+  ollama:
+    build: ./ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+      - ai-summariser
+    environment:
+      - VITE_API_URL=http://localhost:3000
+      - VITE_AI_URL=http://localhost:5000
+
+volumes:
+  ollama-data:
