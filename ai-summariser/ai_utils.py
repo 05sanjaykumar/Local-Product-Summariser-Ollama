@@ -7,7 +7,7 @@ import os
 base_url = os.getenv("OLLAMA_BASE_URL", "http://ollama:11434")
 
 def fetch_product_data(query):
-    url = f"http://backend:3000/getPrice?name={query}"
+    url = f"http://backend:3000/api/getPrice?name={query}"
     response = requests.get(url)
 
     print(f"[DEBUG] Status Code: {response.status_code}")
