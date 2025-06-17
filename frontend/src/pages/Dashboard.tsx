@@ -27,7 +27,7 @@ const DashBoard = () => {
         }
     };
     return (
-        <div className='flex h-screen w-full bg-gray-900 font-sans'>
+        <div className='flex min-h-screen w-full bg-gray-900 font-sans'>
             <main className='flex-1 p-4 md:p-8 scroll-auto overflow-scroll'>
                 <div className='mx-auto max-w-3xl mt-4'>
                     {/* Search Bar and Suggestions Container */}
