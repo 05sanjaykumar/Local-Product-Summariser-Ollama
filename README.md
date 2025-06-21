@@ -90,6 +90,13 @@ docker-compose up --build
 
 ---
 
+## 🏞️ Demo
+
+<img width="1435" alt="Screenshot 2025-06-21 at 11 36 13 PM" src="https://github.com/user-attachments/assets/0c983a88-446b-4542-b16e-803bc3bfd8be" />
+
+---
+
+
 ## 🛡 License
 
 This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**.
