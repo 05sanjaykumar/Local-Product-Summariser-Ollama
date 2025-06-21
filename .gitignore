@@ -2,3 +2,4 @@ backend/node_modules
 ai-summariser/__pycache__
 ai-summariser/venv
 .env.local
+frontend/.env
