@@ -46,3 +46,5 @@ def generate_summary(user_instruction, products):
         "instruction": user_instruction,
         "product_data": product_text
     })
+
+    return result
