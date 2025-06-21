@@ -72,6 +72,9 @@ const DashBoard = () => {
                     </div>
                 </div>
             </main>
+            <footer className='absolute bottom-0 bg-black text-white w-full text-center p-1'>
+                Made By Sanjay Kumar
+            </footer>
         </div>
     );
 };
